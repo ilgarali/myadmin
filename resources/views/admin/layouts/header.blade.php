@@ -74,7 +74,7 @@
                                 </a>
                                 <ul class="submenu">
                                     <li class="submenu-item">
-                                        <a href="form-editor-quill.html">Category</a>
+                                        <a href="{{route('admin.categories.index')}}">Category</a>
                                     </li>
                                     <li class="submenu-item">
                                         <a href="form-editor-ckeditor.html">Post</a>

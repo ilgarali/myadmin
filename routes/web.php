@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\Api\CategoryController;
+use App\Http\Controllers\Admin\Api\PostController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
@@ -31,4 +33,7 @@ Route::prefix('auth')->name('auth.')->group(function () {
 // This for admin panel
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
+    Route::resource('/categories', CategoryController::class);
+    Route::resource('/posts', PostController::class);
+
 });
