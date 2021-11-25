@@ -30,11 +30,11 @@
         />
 
         <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
-        <script defer src="{{ mix('js/app.js') }}"></script>
+         <script defer src="{{ mix('js/app.js') }}"></script>
     </head>
 
     <body>
-        <div id="app">
+        <div id="app1">
             
             <div id="sidebar" class="active">
                 <div class="sidebar-wrapper active">
